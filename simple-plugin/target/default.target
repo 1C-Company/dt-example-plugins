@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="default" sequenceNumber="4">
+<locations>
+<location path="${dt_home}" type="Profile"/>
+<location id="org.eclipse.rcp.source" path="${eclipse_home}" type="Feature"/>
+</locations>
+</target>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com._1c.dt.example.plugin.DataProcessingHandler"
+            id="com._1c.dt.example.plugin.DataProcessingHandler"
+            name="%command.name">
+      </command>
+   </extension>
+   <extension point="org.eclipse.ui.menus">
+    <menuContribution
+        locationURI="popup:#TextEditorContext?after=group.open">
+        <command commandId="com._1c.dt.example.plugin.DataProcessingHandler"
+            style="push"
+            tooltip="%command.tooltip">
+            <visibleWhen checkEnabled="false">
+                <reference definitionId="com._1c.g5.v8.dt.bsl.Bsl.Editor.opened"/>
+            </visibleWhen>
+        </command>
+    </menuContribution>
+</extension>
+</plugin>

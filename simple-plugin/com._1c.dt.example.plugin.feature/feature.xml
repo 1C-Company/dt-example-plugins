@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com._1c.dt.example"
+      label="%featureName"
+      version="1.0.0.qualifier"
+      provider-name="%providerName">
+
+   <description url="">
+      Пример создания плагина для &quot;1C: Enterprise Development Tools&quot;
+   </description>
+
+   <copyright url="">
+      1C LLC
+   </copyright>
+
+   <plugin
+         id="com._1c.dt.example.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
