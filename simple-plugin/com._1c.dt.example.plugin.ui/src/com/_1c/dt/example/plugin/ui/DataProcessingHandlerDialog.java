@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2015, 1C LLC
+ * Copyright (C) 2015-2016, 1C LLC
  */
-package com._1c.dt.example.plugin;
+package com._1c.dt.example.plugin.ui;
 
 import java.util.List;
 

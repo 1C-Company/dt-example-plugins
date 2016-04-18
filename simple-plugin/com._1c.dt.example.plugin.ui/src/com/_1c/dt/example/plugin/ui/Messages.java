@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2015, 1C
+ * Copyright (C) 2015-2016, 1C
  */
-package com._1c.dt.example.plugin;
+package com._1c.dt.example.plugin.ui;
 
 import org.eclipse.osgi.util.NLS;
 
@@ -11,7 +11,7 @@ import org.eclipse.osgi.util.NLS;
 class Messages
     extends NLS
 {
-    private static final String BUNDLE_NAME = "com.example.dt.plugin.messages"; //$NON-NLS-1$
+    private static final String BUNDLE_NAME = "com._1c.dt.example.plugin.ui.messages"; //$NON-NLS-1$
 
     public static String DataProcessingHandler_Error_not_document_object_module;
     public static String DataProcessingHandler_Error_no_accumulation_registers;

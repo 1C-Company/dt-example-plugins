@@ -2,7 +2,7 @@
 <feature
       id="com._1c.dt.example"
       label="%featureName"
-      version="1.0.0.qualifier"
+      version="2.0.0.qualifier"
       provider-name="%providerName">
 
    <description url="">
@@ -14,7 +14,7 @@
    </copyright>
 
    <plugin
-         id="com._1c.dt.example.plugin"
+         id="com._1c.dt.example.plugin.ui"
          download-size="0"
          install-size="0"
          version="0.0.0"

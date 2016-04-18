@@ -4,7 +4,7 @@
    <extension
          point="org.eclipse.ui.commands">
       <command
-            defaultHandler="com._1c.dt.example.plugin.DataProcessingHandler"
+            defaultHandler="com._1c.dt.example.plugin.ui.DataProcessingHandler"
             id="com._1c.dt.example.plugin.DataProcessingHandler"
             name="%command.name">
       </command>
