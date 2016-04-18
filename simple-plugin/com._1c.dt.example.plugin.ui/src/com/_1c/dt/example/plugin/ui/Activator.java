@@ -1,7 +1,7 @@
 /**
- * Copyright (C) 2015, 1C LLC
+ * Copyright (C) 2015-2016, 1C LLC
  */
-package com._1c.dt.example.plugin;
+package com._1c.dt.example.plugin.ui;
 
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Plugin;
@@ -11,13 +11,13 @@ import org.osgi.framework.BundleContext;
 /**
  * Данный класс представляет собой начальную точку в работе плагина. В нем следует реализовывать логику создания плагина,
  * а так же необходимые действия при завершении работы плагина. <br>
- * 
+ *
  *  Так же данный класс содержит в себе ряд методов для удобного логирования ошибок
  */
 public class Activator
     extends Plugin
 {
-    public static final String PLUGIN_ID = "com.example.dt.plugin"; //$NON-NLS-1$
+    public static final String PLUGIN_ID = "com.example.dt.plugin.ui"; //$NON-NLS-1$
     private static Activator plugin;
 
     private BundleContext bundleContext;
@@ -38,9 +38,9 @@ public class Activator
     }
 
     /**
-     * Запись статуса события в лог журнал плагина. 
+     * Запись статуса события в лог журнал плагина.
      *
-     * @param status статус события для логирования, не может быть <code>null</code>. 
+     * @param status статус события для логирования, не может быть <code>null</code>.
      * Данный статус содержит в себе информацию о произошедшем событии (ошибка выполнения, разнообразные предупреждения), которые были зафиксированы в логике работы плагина.
      */
     public static void log(IStatus status)
@@ -62,7 +62,7 @@ public class Activator
      * Создание записи с описанием ошибки в лог журнале плагина по выкинотому исключению и сообщению, его описывающим
      *
      * @param message описание выкинутого исключения, не может быть <code>null</code>
-     * @param throwable выкинутое исключение, может быть <code>null</code> 
+     * @param throwable выкинутое исключение, может быть <code>null</code>
      * @return созданное статус событие, не может быть <code>null</code>
      */
     public static IStatus createErrorStatus(String message, Throwable throwable)
@@ -85,7 +85,7 @@ public class Activator
      * Создание записи с описанием предупреждения в лог журнале плагина по выкинотому исключению и сообщению, его описывающим
      *
      * @param message описание выкинутого исключения, не может быть <code>null</code>
-     * @param throwable выкинутое исключение, может быть <code>null</code> 
+     * @param throwable выкинутое исключение, может быть <code>null</code>
      * @return созданное статус событие, не может быть <code>null</code>
      */
     public static IStatus createWarningStatus(final String message,
@@ -96,7 +96,7 @@ public class Activator
 
     /**
      * Данный метод является начальной точкой работы плагина
-     * 
+     *
      * @param bundleContext объект, создаваемый OSGi Framework, для доступа к разнообразным сервисам, например, по работе с файловыми ресурсами внутри проекта
      */
     @Override
@@ -110,7 +110,7 @@ public class Activator
 
     /**
      * Данный метод вызывается при завершении работы плагина
-     * 
+     *
      * @param bundleContext объект, создаваемый OSGi Framework, для доступа к разнообразным сервисам, например, по работе с файловыми ресурсами внутри проекта
      */
     @Override
