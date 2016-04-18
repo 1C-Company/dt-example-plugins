@@ -32,14 +32,16 @@
 1. Установить Maven последней версии 3.3.9 (https://maven.apache.org/download.cgi)
 2. Выполнить все инструкции по установке (https://maven.apache.org/install.html)
 3. Так как необходимые данные для разработки плагина доступны только пользователям портала "partners.v8.1c.ru", то необходимо указать информацию о пользователе. Зашифруем пароль от портала "partners.v8.1c.ru" (более подробно можно почитать по данной ссылке: https://maven.apache.org/guides/mini/guide-encryption.html):
-    3.1 Установить master-password - выполнить в консоли командной строки вашей операционной системы: mvn --encrypt-master-password <password>
+    1. Установить master-password - выполнить в консоли командной строки вашей операционной системы: mvn --encrypt-master-password <password>
         Важно! master-password хранится в файле "папка_пользователя_операциионной_системы/.m2/settings-security.xml", если он не был ранее создан, то его следует создать через файловую систему и поместить туда полученный пароль:           
-            <settingsSecurity>
-              <master>{YT+AcblyWvgHjw8m9ak/WoXRxOIrXIp7S69ULTb3UhQ=}</master>
-            </settingsSecurity>
-    3.2 Зашифровать пароль от "https://partners.v8.1c.ru/": mvn --encrypt-password <password>
-    3.3 Скопирвать полученный результат
+`<settingsSecurity>`
+  `<master>{YT+AcblyWvgHjw8m9ak/WoXRxOIrXIp7S69ULTb3UhQ=}</master>`
+`</settingsSecurity>`
+
+    2. Зашифровать пароль от "https://partners.v8.1c.ru/": mvn --encrypt-password <password>
+    3. Скопирвать полученный результат
 4. Сконфигурировать "settings.xml", который обычно располагается в "папка_пользователя_операциионной_системы/.m2/". В секцию <servers> внести следующее:
+```        
         <server>
           <id>dt_repository</id>
           <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
@@ -90,8 +92,10 @@
           <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
           <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
         </server>
+ ```
 5. Пример готового "settings.xml":
-    <settings>
+```    
+     <settings>
       <servers>
           
           <server>
@@ -153,6 +157,7 @@
          
         </proxies>
       </settings>
+ ```
 ## Сборка p2 репозитория ("https://wiki.eclipse.org/Equinox_p2_Repository_Mirroring") через Maven
 1. Открыть консоль и перейти в папку, содержащую разрабатываемый плагин
 2. Выполнить: mvn clean verify -f build/pom.xml
