@@ -92,6 +92,11 @@
           <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
           <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
         </server>
+        <server>
+          <id>peaberry_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
  ```
 5. Пример готового "settings.xml":
 ```    
@@ -145,6 +150,11 @@
           </server>
           <server>
             <id>nebula_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>peaberry_repository</id>
             <username>username@1c.ru</username>
             <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
           </server>
