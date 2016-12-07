@@ -8,7 +8,7 @@
 Инструкция по разработке плагинов к 1C:Enterprise Development Tools расположена в подкаталоге  <b>plugin-development/documentation-html/index.html</b> каталога установки инструмента.
 
 # Для разработки и запуска плагина необходимо, чтобы были установлены:
-1. 1C:Enterprise Development Tools версии 1.2.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.2.0.2480)
+1. 1C:Enterprise Development Tools версии 1.4.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.4.0.698)
 2. Eclipse Mars2 (4.5.2) for RCP and RAP Developers (http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/mars2)
 3. Java SE Development Kit 8u73  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
@@ -97,6 +97,21 @@
           <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
           <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
         </server>
+        <server>
+          <id>gumtree_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>simmetrics_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>fastutil_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
  ```
 5. Пример готового "settings.xml":
 ```    
@@ -155,6 +170,21 @@
           </server>
           <server>
             <id>peaberry_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>gumtree_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>simmetrics_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>fastutil_repository</id>
             <username>username@1c.ru</username>
             <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
           </server>
