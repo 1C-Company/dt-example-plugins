@@ -2,7 +2,8 @@
 <?pde version="3.8"?><target name="default" sequenceNumber="0">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.v8.dt.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.services.mobile.feature.feature.group" version="0.0.0"/>
 <repository id="dt_repository" location="https://edt.1c.ru/releases/silver/dt/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -46,13 +47,13 @@
 <repository id="g5_commons_repository" location="https://edt.1c.ru/releases/commons/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.commons.feature.group" version="2.0.0.v20160721-1015"/>
-<repository id="commons_repository" location="https://edt.1c.ru/releases/commons-modeling/2.0.0.v20160721-1015/"/>
+<unit id="com._1c.g5.commons.feature.group" version="2.1.0.v20170222-0915"/>
+<repository id="commons_repository" location="https://edt.1c.ru/releases/commons-modeling/2.1.0.v20170222-0915/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.handly.feature.group" version="0.4.0.v20151203-1303"/>
-<unit id="org.eclipse.handly.xtext.feature.group" version="0.4.0.v20151203-1303"/>
-<repository location="http://download.eclipse.org/handly/releases/0.4/repository/"/>
+<unit id="org.eclipse.handly.feature.group" version="0.6.0.v20161109-0701"/>
+<unit id="org.eclipse.handly.xtext.feature.group" version="0.6.0.v20161109-0701"/>
+<repository location="http://download.eclipse.org/handly/releases/0.6/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.xtext.sdk.feature.group" version="2.9.2.v201603040440"/>
@@ -81,8 +82,8 @@
 <repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20150821153341/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.ides.feature.group" version="3.0.0.v20160407-1635"/>
-<repository id="ides_repository" location="https://edt.1c.ru/releases/ides/3.0.0.v20160407-1635/"/>
+<unit id="com._1c.g5.ides.feature.group" version="0.0.0"/>
+<repository id="ides_repository" location="https://edt.1c.ru/releases/ides/4.0.0.v116/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.mapdb.mapdb" version="1.0.6"/>
