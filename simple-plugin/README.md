@@ -8,9 +8,9 @@
 Инструкция по разработке плагинов к 1C:Enterprise Development Tools расположена в подкаталоге  <b>plugin-development/documentation-html/index.html</b> каталога установки инструмента.
 
 # Для разработки и запуска плагина необходимо, чтобы были установлены:
-1. 1C:Enterprise Development Tools версии 1.4.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.4.0.698)
+1. 1C:Enterprise Development Tools версии 1.5.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.5.0.1122)
 2. Eclipse Mars2 (4.5.2) for RCP and RAP Developers (http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/mars2)
-3. Java SE Development Kit 8u73  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+3. Java SE Development Kit 8u131  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 # Запуск плагина из Eclipse
 Запускаем Eclipse на чистой рабочей области (workspace) 
