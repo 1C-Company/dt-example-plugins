@@ -110,7 +110,7 @@
 <!-- MAPDB -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.mapdb.mapdb" version="1.0.6"/>
-<repository id="mapdb_repository" location="http://boreas.dept07/storage/bamboo/p2/release/apache/mapdb"/>
+<repository id="mapdb_repository" location="https://edt.1c.ru/releases/apache/mapdb/"/>
 </location>
 
 <!-- JETTY -->
