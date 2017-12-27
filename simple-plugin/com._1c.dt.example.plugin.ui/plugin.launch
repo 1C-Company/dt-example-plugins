@@ -17,7 +17,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx2048m -XX:MaxPermSize=256m"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms80m -Xmx4024m -Dlog4j.configuration=platform:/plugin/com._1c.g5.v8.dt.logging/log4j.properties -DexhaustiveValidation=true -Dosgi.framework.extensions=org.eclipse.fx.osgi -Dosgi.module.lock.timeout=240"/>
 <stringAttribute key="pde.version" value="3.3"/>
 <stringAttribute key="product" value="org.eclipse.sdk.ide"/>
 <booleanAttribute key="show_selected_only" value="false"/>

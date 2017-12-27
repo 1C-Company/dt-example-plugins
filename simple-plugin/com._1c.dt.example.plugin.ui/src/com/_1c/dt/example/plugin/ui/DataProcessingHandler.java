@@ -4,7 +4,7 @@
 package com._1c.dt.example.plugin.ui;
 
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
@@ -41,8 +41,8 @@ import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
+import com.google.common.io.CharSource;
 import com.google.common.io.CharStreams;
-import com.google.common.io.InputSupplier;
 import com.google.common.io.Resources;
 
 /**
@@ -67,8 +67,7 @@ public class DataProcessingHandler
     static
     {
         //TODO: сделать поддержку генерации английского варианта обработчика
-        templateContent =
-            readContents(getFileInputSupplier(TEMPLATE_NAME), TEMPLATE_NAME);
+        templateContent = readContents(getFileInputSupplier(TEMPLATE_NAME), TEMPLATE_NAME);
     }
 
     @Override
@@ -76,7 +75,7 @@ public class DataProcessingHandler
     {
         // получим активный Xtext редактор
         IWorkbenchPart part = HandlerUtil.getActivePart(event);
-        XtextEditor target = (XtextEditor)part.getAdapter(XtextEditor.class);
+        XtextEditor target = part.getAdapter(XtextEditor.class);
 
         if (target != null)
         {
@@ -103,9 +102,7 @@ public class DataProcessingHandler
             {
                 // Данный модуль не является объектным модулем документа,
                 // выдадим сообщение об этом и завершим работу
-                MessageBox dialog =
-                    new MessageBox(Display.getCurrent().getActiveShell(),
-                        SWT.ERROR);
+                MessageBox dialog = new MessageBox(Display.getCurrent().getActiveShell(), SWT.ERROR);
                 dialog.setText(Messages.DataProcessingHandler_Error);
                 dialog.setMessage(Messages.DataProcessingHandler_Error_not_document_object_module);
                 dialog.open();
@@ -118,9 +115,7 @@ public class DataProcessingHandler
             {
                 // У документа нет ниодного регистра накопления, выдадим
                 // сообщение об этом и завершим работу
-                MessageBox dialog =
-                    new MessageBox(Display.getCurrent().getActiveShell(),
-                        SWT.ERROR);
+                MessageBox dialog = new MessageBox(Display.getCurrent().getActiveShell(), SWT.ERROR);
                 dialog.setText(Messages.DataProcessingHandler_Error);
                 dialog.setMessage(Messages.DataProcessingHandler_Error_no_accumulation_registers);
                 dialog.open();
@@ -129,9 +124,7 @@ public class DataProcessingHandler
 
             // создадим диалог конструктора движения регистра
             DataProcessingHandlerDialog dialog =
-                new DataProcessingHandlerDialog(
-                    Display.getCurrent().getActiveShell(), mdDocument,
-                    registers);
+                new DataProcessingHandlerDialog(Display.getCurrent().getActiveShell(), mdDocument, registers);
             // обработаем завершение работы пользователя с диалогом
             if (dialog.open() == Window.OK)
             {
@@ -144,23 +137,21 @@ public class DataProcessingHandler
                                                                                // шаблон
                                                                                // текста
                                                                                // обработчика
-                // подставим в шаблон имя регистра, для которого делается
-                // обработка проведения
+                                                                               // подставим в шаблон имя регистра, для которого делается
+                                                                               // обработка проведения
                 template.setAttribute("RegisterName", dialog.getRegisterName()); //$NON-NLS-1$
                 // формируем тело обработчика проведения на основе данных из
                 // диалога
-                String body =
-                    Joiner.on(System.lineSeparator()).join(
-                        Collections2.transform(dialog.getExpressions(),
-                            new Function<Pair<String, String>, String>()
-                            {
-                                @Override
-                                public String apply(Pair<String, String> item)
-                                {
-                                    return "Запись." + item.getFirst() + " = " //$NON-NLS-1$ //$NON-NLS-2$
-                                        + item.getSecond() + ';';
-                                }
-                            }));
+                String body = Joiner.on(System.lineSeparator()).join(
+                    Collections2.transform(dialog.getExpressions(), new Function<Pair<String, String>, String>()
+                    {
+                        @Override
+                        public String apply(Pair<String, String> item)
+                        {
+                            return "Запись." + item.getFirst() + " = " //$NON-NLS-1$ //$NON-NLS-2$
+                                + item.getSecond() + ';';
+                        }
+                    }));
                 template.setAttribute("body", body); // дозаполнили шаблон //$NON-NLS-1$
                                                      // обработчика
                 try
@@ -169,8 +160,7 @@ public class DataProcessingHandler
                     // обработчик
                     int insertPosition = getInsertHandlerPosition(doc);
                     // добавляем текст обработчика в модуль
-                    doc.replace(insertPosition, insertPosition,
-                        template.toString());
+                    doc.replace(insertPosition, insertPosition, template.toString());
                 }
                 catch (BadLocationException e)
                 {
@@ -184,8 +174,7 @@ public class DataProcessingHandler
     /*
      * Метод выбирает всех регистраторов типа Регистр накопления
      */
-    private List<BasicRegister> findAccumulationRegister(
-        List<BasicRegister> registerRecords)
+    private List<BasicRegister> findAccumulationRegister(List<BasicRegister> registerRecords)
     {
         List<BasicRegister> registers = Lists.newArrayList();
         for (BasicRegister register : registerRecords)
@@ -200,36 +189,32 @@ public class DataProcessingHandler
     {
         //работа с семантической моделью встроенного языка через документ возможна только через специальный метод
         //использование других способов приведет к ошибкам
-        int insertPosition =
-            doc.readOnly(new IUnitOfWork<Integer, XtextResource>()
+        int insertPosition = doc.readOnly(new IUnitOfWork<Integer, XtextResource>()
+        {
+            @Override
+            public Integer exec(XtextResource res) throws Exception
             {
-                @Override
-                public Integer exec(XtextResource res) throws Exception
+                //сперва проверяем, доступность семантической модели встроенного языка
+                if (res.getContents() != null && !res.getContents().isEmpty())
                 {
-                    //сперва проверяем, доступность семантической модели встроенного языка
-                    if (res.getContents() != null
-                        && !res.getContents().isEmpty())
+                    EObject obj = res.getContents().get(0);
+                    if (obj instanceof Module) // проверили, что работаем с правильным объектом семантической модели
                     {
-                        EObject obj = res.getContents().get(0);
-                        if (obj instanceof Module) // проверили, что работаем с правильным объектом семантической модели
+                        Module module = (Module)obj;
+                        if (!module.allDeclareStatements().isEmpty())
                         {
-                            Module module = (Module)obj;
-                            if (!module.allDeclareStatements().isEmpty())
-                            {
-                                // обработчик вставляется в начало модуля,
-                                // сразу после объявления переменных, если
-                                // они были
-                                DeclareStatement lastDeclStatement =
-                                    module.allDeclareStatements().get(
-                                        module.allDeclareStatements().size() - 1);
-                                return NodeModelUtils.findActualNodeFor(
-                                    lastDeclStatement).getTotalEndOffset();
-                            }
+                            // обработчик вставляется в начало модуля,
+                            // сразу после объявления переменных, если
+                            // они были
+                            DeclareStatement lastDeclStatement =
+                                module.allDeclareStatements().get(module.allDeclareStatements().size() - 1);
+                            return NodeModelUtils.findActualNodeFor(lastDeclStatement).getTotalEndOffset();
                         }
                     }
-                    return 0;
                 }
-            });
+                return 0;
+            }
+        });
         return insertPosition;
     }
 
@@ -259,12 +244,11 @@ public class DataProcessingHandler
         });
     }
 
-    private static String readContents(InputSupplier<InputStreamReader> stream,
-        String path)
+    private static String readContents(CharSource source, String path)
     {
-        try
+        try (Reader reader = source.openBufferedStream())
         {
-            return CharStreams.toString(stream);
+            return CharStreams.toString(reader);
         }
         catch (IOException | NullPointerException e)
         {
@@ -272,11 +256,9 @@ public class DataProcessingHandler
         }
     }
 
-    private static InputSupplier<InputStreamReader> getFileInputSupplier(
-        String partName)
+    private static CharSource getFileInputSupplier(String partName)
     {
-        return Resources.newReaderSupplier(
-            DataProcessingHandler.class.getResource("/resources/" + partName), //$NON-NLS-1$
+        return Resources.asCharSource(DataProcessingHandler.class.getResource("/resources/" + partName), //$NON-NLS-1$
             StandardCharsets.UTF_8);
     }
 }
