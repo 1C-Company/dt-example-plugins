@@ -1,209 +1,172 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="default" sequenceNumber="0">
+<?pde version="3.8"?><target name="default" sequenceNumber="4">
 <locations>
-
-<!-- EDT -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.v8.dt.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.extension.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.services.mobile.feature.feature.group" version="0.0.0"/>
-<repository id="dt_repository" location="https://edt.1c.ru/releases/fluorite/dt/1.6.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt/1.7.0/"/>
 </location>
-
-<!-- EDT Testing -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.testing.feature.group" version="0.0.0"/>
-<repository id="dt_testing_repository" location="https://edt.1c.ru/releases/fluorite/dt-tests/1.6.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-tests/1.7.0/"/>
 </location>
-
-<!-- ECLIPSE -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.sdk.feature.group" version="4.5.2.v20160212-1500"/>
-<unit id="org.eclipse.equinox.core.sdk.feature.group" version="3.11.2.v20160128-1406"/>
-<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.200.v20150602-1417"/>
-<unit id="org.eclipse.emf.sdk.feature.group" version="2.11.2.v20160208-0841"/>
-<unit id="org.eclipse.emf.ecore.xcore.sdk.feature.group" version="1.3.2.v20160209-0349"/>
-<unit id="org.eclipse.xsd.sdk.feature.group" version="2.11.0.v20160208-0841"/>
-<unit id="org.eclipse.emf.compare.feature.group" version="3.1.1.201509120604"/>
-<unit id="org.eclipse.emf.transaction.sdk.feature.group" version="1.9.0.201506010221"/>
-<unit id="org.eclipse.emf.validation.sdk.feature.group" version="1.9.0.201505312255"/>
-<unit id="org.eclipse.uml2.sdk.feature.group" version="5.1.2.v20160201-0816"/>
-<unit id="org.eclipse.gef.sdk.feature.group" version="3.10.1.201508170204"/>
-<unit id="org.eclipse.gmf.sdk.feature.group" version="3.3.1.201509020853"/>
-<unit id="org.eclipse.gmf.runtime.sdk.feature.group" version="1.9.0.201506060219"/>
-<unit id="org.eclipse.gmf.runtime.notation.sdk.feature.group" version="1.9.0.201505312221"/>
-<unit id="org.eclipse.gmf.runtime.thirdparty.feature.group" version="1.9.0.201506060219"/>
-<unit id="org.eclipse.m2m.qvt.oml.sdk.feature.group" version="3.5.0.v20150603-1058"/>
-<unit id="org.eclipse.emf.query.sdk.feature.group" version="1.9.0.201505312221"/>
-<unit id="org.eclipse.ocl.feature.group" version="3.5.0.v20150525-1635"/>
-<unit id="org.eclipse.egit.feature.group" version="4.1.1.201511131810-r"/>
-<unit id="org.eclipse.jgit.feature.group" version="4.1.1.201511131810-r"/>
-<unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.12.0.v20151130-0157"/>
-<unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="3.12.0.v20151130-0157"/>
-<unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.0.v20151130-0157"/>
-<unit id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group" version="1.1.0.v20151130-0157"/>
-<unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.0.v20151130-0157"/>
-<unit id="org.eclipse.ecf.core.feature.feature.group" version="1.2.0.v20151130-0157"/>
-<unit id="org.eclipse.wst.common.fproj.feature.group" version="3.7.0.v201505072140"/>
-<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="3.7.1.v201602111638"/>
-<repository location="http://download.eclipse.org/releases/mars/"/>
+<unit id="com.google.guava" version="15.0.0.v201403281430"/>
+<unit id="com.google.guava" version="21.0.0.v20170206-1425"/>
+<unit id="com.google.inject" version="0.0.0"/>
+<unit id="com.google.protobuf" version="0.0.0"/>
+<unit id="org.apache.lucene.core" version="3.5.0.v20120725-1805"/>
+<unit id="org.eclipse.ecf.core.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.equinox.core.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.fx.runtime.min.feature.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.gef.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.gmf.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.gmf.runtime.notation.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.gmf.runtime.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.gmf.runtime.thirdparty.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.m2m.qvt.oml.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.wst.common.fproj.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.wst.web_ui.feature.feature.group" version="0.0.0"/>
+<repository location="http://download.eclipse.org/releases/oxygen/"/>
 </location>
-
-<!-- G5 Commons -->
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.emf.compare.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.ecore.xcore.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.query.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.transaction.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.emf.validation.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.ocl.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.uml2.sdk.feature.group" version="0.0.0"/>
+<unit id="org.eclipse.xsd.sdk.feature.group" version="0.0.0"/>
+<repository location="http://download.eclipse.org/releases/neon/"/>
+</location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.i18n" version="1.0.1"/>
 <unit id="com._1c.v8.core.streams" version="0.1.1.1"/>
-<repository id="g5_commons_repository" location="https://edt.1c.ru/releases/commons/"/>
+<repository location="https://edt.1c.ru/releases/commons/"/>
 </location>
-
-<!-- G5 Commons Modeling -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.commons.feature.group" version="3.0.0.v20170421-1700"/>
-<repository id="commons_repository" location="https://edt.1c.ru/releases/commons-modeling/"/>
+<unit id="com._1c.g5.commons.feature.group" version="3.1.0.v20171110-1145"/>
+<repository location="https://edt.1c.ru/releases/commons-modeling/"/>
 </location>
-
-<!-- HANDLY -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.handly.feature.group" version="0.6.0.v20161109-0701"/>
-<unit id="org.eclipse.handly.xtext.feature.group" version="0.6.0.v20161109-0701"/>
-<repository location="http://download.eclipse.org/handly/releases/0.6/repository/"/>
+<unit id="org.eclipse.handly.feature.group" version="0.7.0.v20170624-1401"/>
+<unit id="org.eclipse.handly.xtext.feature.group" version="0.7.0.v20170624-1401"/>
+<repository location="http://download.eclipse.org/handly/releases/0.7/repository/"/>
 </location>
-
-<!-- XTEXT -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.xtext.sdk.feature.group" version="2.9.2.v201603040440"/>
-<unit id="org.eclipse.xtend.sdk.feature.group" version="2.9.2.v201603040440"/>
-<unit id="org.eclipse.xpand.sdk.feature.group" version="2.0.0.v201406030414"/>
 <unit id="org.eclipse.emf.mwe.sdk.feature.group" version="1.3.5.v201503051048"/>
-<unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="2.8.3.v201512160556"/>
-<unit id="org.eclipse.emf.mwe2.launcher.feature.group" version="2.8.3.v201512160634"/>
-<unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.8.3.v201512160634"/>
+<unit id="org.eclipse.emf.mwe2.language.sdk.feature.group" version="2.9.0.v201605261103"/>
+<unit id="org.eclipse.emf.mwe2.launcher.feature.group" version="2.9.0.v201605261103"/>
+<unit id="org.eclipse.emf.mwe2.runtime.sdk.feature.group" version="2.9.0.v201605261103"/>
+<unit id="org.eclipse.xpand.sdk.feature.group" version="2.0.0.v201406030414"/>
+<unit id="org.eclipse.xtend.sdk.feature.group" version="2.12.0.v20170519-1412"/>
+<unit id="org.eclipse.xtext.sdk.feature.group" version="2.12.0.v20170519-1412"/>
 <repository location="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
 </location>
-
-<!-- XTEXT ANTLR -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="de.itemis.xtext.antlr.sdk.feature.group" version="2.1.1.v201405091103"/>
 <repository location="http://download.itemis.com/updates/releases/2.1.1/"/>
 </location>
-
-<!-- ECLIPSE ORBIT -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.objenesis" version="1.0.0.v201505121915"/>
-<unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
-<unit id="org.apache.derby" version="10.8.2.2_v201211210650"/>
-<unit id="org.aopalliance" version="1.0.0.v201105210816"/>
-<unit id="org.slf4j.impl.log4j12" version="1.7.2.v20131105-2200"/>
-<unit id="com.google.inject" version="3.0.0.v201312141243"/>
 <unit id="com.google.gson" version="2.2.4.v201311231704"/>
 <unit id="com.google.inject.assistedinject" version="3.0.0.v201402270930"/>
-<unit id="com.google.guava" version="15.0.0.v201403281430"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20150821153341/repository/"/>
+<unit id="org.aopalliance" version="1.0.0.v201105210816"/>
+<unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
+<unit id="org.apache.derby" version="10.8.2.2_v201605172130"/>
+<unit id="org.objenesis" version="1.0.0.v201505121915"/>
+<unit id="org.slf4j.impl.log4j12" version="1.7.2.v20131105-2200"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20170818183741/repository/"/>
 </location>
-
-<!-- G5 IDES -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.ides.feature.group" version="0.0.0"/>
-<repository id="ides_repository" location="https://edt.1c.ru/releases/ides/"/>
+<repository location="https://edt.1c.ru/releases/ides/"/>
 </location>
-
-<!-- MAPDB -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.mapdb.mapdb" version="1.0.6"/>
-<repository id="mapdb_repository" location="https://edt.1c.ru/releases/apache/mapdb/"/>
+<repository location="https://edt.1c.ru/releases/apache/mapdb/"/>
 </location>
-
-<!-- JETTY -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.jetty.bundles.f.feature.group" version="9.2.13.201508192117"/>
-<unit id="org.eclipse.jetty.bundles.f.source.feature.group" version="9.2.13.201508192117"/>
-<repository location="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.2.13.v20150730/"/>
+<unit id="org.eclipse.jetty.bundles.f.feature.group" version="9.4.5.201705032012"/>
+<unit id="org.eclipse.jetty.bundles.f.source.feature.group" version="9.4.5.201705032012"/>
+<repository location="http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.4.5.v20170502/"/>
 </location>
-
-<!-- LIBS -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="slf4j.api" version="1.6.1"/>
 <unit id="com._1c.org.mockito" version="1.9.5.v20131031-1030"/>
-<repository id="mockito_repository" location="https://edt.1c.ru/releases/lib/"/>
+<unit id="slf4j.api" version="1.6.1"/>
+<repository location="https://edt.1c.ru/releases/lib/"/>
 </location>
-
-<!-- Android tools -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.com.android.tools" version="24.3.1.v20151112-1524"/>
-<unit id="com._1c.net.sf.kxml.kxml2" version="2.3.0.v20151112-1524"/>
 <unit id="com._1c.com.android.tools.source" version="24.3.1.v20151112-1524"/>
-<repository id="android_tools_repository" location="https://edt.1c.ru/releases/tools/android-tools/v20151112-1524/"/>
+<unit id="com._1c.net.sf.kxml.kxml2" version="2.3.0.v20151112-1524"/>
+<repository location="https://edt.1c.ru/releases/tools/android-tools/v20151112-1524/"/>
 </location>
-
-<!-- NEBULA -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.nebula.widgets.grid.feature.feature.group" version="1.0.0.201401021803"/>
-<unit id="org.eclipse.nebula.widgets.tablecombo.feature.feature.group" version="1.0.0.201401021803"/>
 <unit id="org.eclipse.nebula.widgets.datechooser.feature.feature.group" version="1.0.0.201410030017"/>
 <unit id="org.eclipse.nebula.widgets.formattedtext.feature.feature.group" version="1.0.0.201410030017"/>
-<repository id="nebula_repository" location="https://edt.1c.ru/releases/nebula/snapshot"/>
+<unit id="org.eclipse.nebula.widgets.grid.feature.feature.group" version="1.0.0.201401021803"/>
+<unit id="org.eclipse.nebula.widgets.tablecombo.feature.feature.group" version="1.0.0.201401021803"/>
+<repository location="https://edt.1c.ru/releases/nebula/snapshot"/>
 </location>
-
-<!-- PEABERRY -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.ops4j.peaberry" version="1.3.0"/>
-<repository id="peaberry_repository" location="https://edt.1c.ru/releases/peaberry/"/>
+<repository location="https://edt.1c.ru/releases/peaberry/"/>
 </location>
-
-<!-- EDT:Gumtree -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="com._1c.g5.gumtree.feature.feature.group" version="2.0.0.v9"/>
-<repository id="gumtree_repository" location="https://edt.1c.ru/releases/gumtree/2.0.0/"/>
+<unit id="com._1c.g5.gumtree.feature.feature.group" version="0.0.0"/>
+<repository location="https://edt.1c.ru/releases/gumtree/2.1.0/"/>
 </location>
-
-<!-- EDT:Profiling -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.profiling.feature.feature.group" version="0.0.0"/>
-<repository id="profiling_repository" location="https://edt.1c.ru/releases/fluorite/dt-profiling/3.0.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-profiling/3.0.2/"/>
 </location>
-
-<!-- EDT:ER -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.erd.feature.feature.group" version="0.0.0"/>
-<repository id="er_repository" location="https://edt.1c.ru/releases/fluorite/dt-erd/1.1.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-erd/1.2.0/"/>
 </location>
-
-<!-- EDT:Diagram Framework -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.diagram.framework.feature.feature.group" version="0.0.0"/>
-<repository id="diagram_framework_repository" location="https://edt.1c.ru/releases/fluorite/dt-diagramframework/1.0.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-diagramframework/1.1.0/"/>
 </location>
-
-<!-- EDT:Graphical Scheme -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.bp.scheme.feature.feature.group" version="0.0.0"/>
-<repository id="graphical_scheme_repository" location="https://edt.1c.ru/releases/fluorite/dt-bpscheme/1.0.0/"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-bpscheme/1.1.0/"/>
 </location>
-
-<!-- EDT:SSH Designer Client -->
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="com._1c.g5.v8.dt.eventhandlers.feature.feature.group" version="0.0.0"/>
+<repository location="https://edt.1c.ru/releases/lazurite/dt-eventhandlers/1.0.0/"/>
+</location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.designer.ssh.client" version="0.0.0"/>
-<repository id="ssh_designer_repository" location="https://edt.1c.ru/releases/ssh-designer-client/0.1.0/0.1.0.v67"/>
+<repository location="https://edt.1c.ru/releases/ssh-designer-client/0.1.0/"/>
 </location>
-
-<!-- Simmetrics -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com.github.mpkorstanje.simmetrics-core" version="4.1.0.v20160617-1500"/>
-<repository id="simmetrics_repository" location="https://edt.1c.ru/releases/simmetrics/"/>
+<repository location="https://edt.1c.ru/releases/simmetrics/"/>
 </location>
-
-<!-- Fastutil -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="it.unimi.dsi.fastutil" version="7.0.12.v20160617-1428"/>
-<repository id="fastutil_repository" location="https://edt.1c.ru/releases/fastutil/"/>
+<repository location="https://edt.1c.ru/releases/fastutil/"/>
 </location>
-
-<!-- JSch and JZlib -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.com.jcraft.jzlib" version="1.1.3.1-v20160316-0821"/>
 <unit id="com._1c.com.jcraft.jzlib.source" version="1.1.3.1-v20160316-0821"/>
-<repository id="jsch_jzlib_repository" location="https://edt.1c.ru/releases/com.jcraft.jsch.repository/update/0.1.53.1/"/>
+<repository location="https://edt.1c.ru/releases/com.jcraft.jsch.repository/update/0.1.53.1/"/>
 </location>
-
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.egit.feature.group" version="4.8.0.201706111038-r"/>
+<unit id="org.eclipse.jgit.feature.group" version="4.8.0.201706111038-r"/>
+<repository location="https://edt.1c.ru/releases/egit/"/>
+</location>
 </locations>
 </target>

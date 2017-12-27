@@ -11,7 +11,7 @@
    </extension>
    <extension point="org.eclipse.ui.menus">
     <menuContribution
-        locationURI="popup:#TextEditorContext?after=group.open">
+        locationURI="popup:#BslEditorContext?endof=group.open">
         <command commandId="com._1c.dt.example.plugin.DataProcessingHandler"
             style="push"
             tooltip="%command.tooltip">
