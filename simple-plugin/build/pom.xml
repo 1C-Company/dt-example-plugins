@@ -15,9 +15,9 @@
 
   <properties>
     <name>1C:Enterprise Development Tools Plugin</name>
-    <tycho.version>0.24.0</tycho.version>
-    <tycho.extras.version>0.24.0</tycho.extras.version>
-    <xtend.maven.plugin.version>2.9.2</xtend.maven.plugin.version>
+    <tycho.version>1.0.0</tycho.version>
+    <tycho.extras.version>1.0.0</tycho.extras.version>
+    <xtend.maven.plugin.version>2.12.0</xtend.maven.plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
