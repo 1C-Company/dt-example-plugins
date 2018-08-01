@@ -5,11 +5,11 @@
 <unit id="com._1c.g5.v8.dt.extension.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.services.mobile.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt/1.9.0/"/>
+<repository id="dt_repository" location="https://edt.1c.ru/releases/onyx/dt/1.9.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.testing.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-tests/1.9.0/"/>
+<repository id="dt_testing_repository" location="https://edt.1c.ru/releases/onyx/dt-tests/1.9.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -53,11 +53,11 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.i18n" version="1.0.1"/>
 <unit id="com._1c.v8.core.streams" version="0.1.1.1"/>
-<repository location="https://edt.1c.ru/releases/commons/"/>
+<repository id="commons_repository" location="https://edt.1c.ru/releases/commons/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.commons.feature.group" version="3.1.100.v20180410-1340"/>
-<repository location="https://edt.1c.ru/releases/commons-modeling/"/>
+<repository id="g5_commons_repository" location="https://edt.1c.ru/releases/commons-modeling/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.handly.feature.group" version="0.7.0.v20170624-1401"/>
@@ -95,11 +95,11 @@
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.ides.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/ides/"/>
+<repository id="ides_repository" location="https://edt.1c.ru/releases/ides/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.mapdb.mapdb" version="1.0.6"/>
-<repository location="https://edt.1c.ru/releases/apache/mapdb/"/>
+<repository id="mapdb_repository" location="https://edt.1c.ru/releases/apache/mapdb/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.jetty.bundles.f.feature.group" version="9.4.5.201705032012"/>
@@ -109,79 +109,79 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.org.mockito" version="1.9.5.v20131031-1030"/>
 <unit id="slf4j.api" version="1.6.1"/>
-<repository location="https://edt.1c.ru/releases/lib/"/>
+<repository id="mockito_repository" location="https://edt.1c.ru/releases/lib/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.com.android.tools" version="24.3.1.v20151112-1524"/>
 <unit id="com._1c.com.android.tools.source" version="24.3.1.v20151112-1524"/>
 <unit id="com._1c.net.sf.kxml.kxml2" version="2.3.0.v20151112-1524"/>
-<repository location="https://edt.1c.ru/releases/tools/android-tools/v20151112-1524/"/>
+<repository id="android_tools_repository" location="https://edt.1c.ru/releases/tools/android-tools/v20151112-1524/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.nebula.widgets.datechooser.feature.feature.group" version="1.0.0.201410030017"/>
 <unit id="org.eclipse.nebula.widgets.formattedtext.feature.feature.group" version="1.0.0.201410030017"/>
 <unit id="org.eclipse.nebula.widgets.grid.feature.feature.group" version="1.0.0.201401021803"/>
 <unit id="org.eclipse.nebula.widgets.tablecombo.feature.feature.group" version="1.0.0.201401021803"/>
-<repository location="https://edt.1c.ru/releases/nebula/snapshot"/>
+<repository id="nebula_repository" location="https://edt.1c.ru/releases/nebula/snapshot"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.ops4j.peaberry" version="1.3.0"/>
-<repository location="https://edt.1c.ru/releases/peaberry/"/>
+<repository id="peaberry_repository" location="https://edt.1c.ru/releases/peaberry/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.gumtree.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/gumtree/3.0.0/"/>
+<repository id="gumtree_repository" location="https://edt.1c.ru/releases/gumtree/3.0.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.profiling.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-profiling/3.1.1/"/>
+<repository id="profiling_repository" location="https://edt.1c.ru/releases/onyx/dt-profiling/3.1.1/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.erd.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-erd/2.1.0/"/>
+<repository id="er_repository" location="https://edt.1c.ru/releases/onyx/dt-erd/2.1.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.diagram.framework.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-diagramframework/2.1.0/"/>
+<repository id="diagram_framework_repository" location="https://edt.1c.ru/releases/onyx/dt-diagramframework/2.1.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.bp.scheme.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-bpscheme/1.3.0/"/>
+<repository id="graphical_scheme_repository" location="https://edt.1c.ru/releases/onyx/dt-bpscheme/1.3.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.eventhandlers.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-eventhandlers/1.2.0/"/>
+<repository id="event_handlers_repository" location="https://edt.1c.ru/releases/onyx/dt-eventhandlers/1.2.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.designer.ssh.client" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/ssh-designer-client/0.2.0/"/>
+<repository id="ssh_designer_repository" location="https://edt.1c.ru/releases/ssh-designer-client/0.2.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com.github.mpkorstanje.simmetrics-core" version="4.1.0.v20160617-1500"/>
-<repository location="https://edt.1c.ru/releases/simmetrics/"/>
+<repository id="simmetrics_repository" location="https://edt.1c.ru/releases/simmetrics/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="it.unimi.dsi.fastutil" version="7.0.12.v20160617-1428"/>
-<repository location="https://edt.1c.ru/releases/fastutil/"/>
+<repository id="fastutil_repository" location="https://edt.1c.ru/releases/fastutil/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.com.jcraft.jzlib" version="1.1.3.1-v20160316-0821"/>
 <unit id="com._1c.com.jcraft.jzlib.source" version="1.1.3.1-v20160316-0821"/>
-<repository location="https://edt.1c.ru/releases/com.jcraft.jsch.repository/update/0.1.53.1/"/>
+<repository id="jsch_jzlib_repository" location="https://edt.1c.ru/releases/com.jcraft.jsch.repository/update/0.1.53.1/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.egit.feature.group" version="4.8.0.201706111038-r"/>
 <unit id="org.eclipse.jgit.feature.group" version="4.8.0.201706111038-r"/>
-<repository location="https://edt.1c.ru/releases/egit/"/>
+<repository id="egit_repository" location="https://edt.1c.ru/releases/egit/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.wiring.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/wiring/2.0.100/"/>
+<repository id="wiring_repository" location="https://edt.1c.ru/releases/wiring/2.0.100/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.jface.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.lwt.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/lwt/5.0.0/"/>
+<repository id="lwt_repository" location="https://edt.1c.ru/releases/lwt/5.0.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.babel.nls_eclipse_ru.feature.group" version="0.0.0"/>
@@ -189,7 +189,7 @@
 <unit id="org.eclipse.babel.nls_technology.jgit_ru.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.babel.nls_tools.tm_ru.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.babel.nls_webtools_ru.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/babel/onyx/"/>
+<repository id="babel_repository" location="https://edt.1c.ru/releases/babel/onyx/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.platform.support_native.feature.feature.group" version="0.0.0"/>
@@ -198,24 +198,24 @@
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.12.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.8.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.9.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-v8platform/0.1.0/"/>
+<repository id="dt_v8platform_repository" location="https://edt.1c.ru/releases/onyx/dt-v8platform/0.1.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com.codeaffine.eclipse.ui.swt.theme.feature.feature.group" version="0.0.0"/>
 <unit id="com.codeaffine.util" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/xiliary/"/>
+<repository id="xiliary_repository" location="https://edt.1c.ru/releases/xiliary/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.antlr.antlr4-runtime" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/antlr4-runtime/update/4.7.1/"/>
+<repository id="antlr_runtime_repository" location="https://edt.1c.ru/releases/antlr4-runtime/update/4.7.1/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.v8.dt.geographicalschema.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/onyx/dt-geoscheme/1.0.0/"/>
+<repository id="geoschema_repository" location="https://edt.1c.ru/releases/onyx/dt-geoscheme/1.0.0/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="com._1c.g5.ides.monitoring.feature.feature.group" version="0.0.0"/>
-<repository location="https://edt.1c.ru/releases/monitor/0.1.0/"/>
+<repository id="monitoring_repository" location="https://edt.1c.ru/releases/monitor/0.1.0/"/>
 </location>
 </locations>
 </target>
