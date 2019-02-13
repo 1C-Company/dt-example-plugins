@@ -8,9 +8,9 @@
 Инструкция по разработке плагинов к 1C:Enterprise Development Tools расположена в подкаталоге  <b>plugin-development/documentation-html/index.html</b> каталога установки инструмента.
 
 # Для разработки и запуска плагина необходимо, чтобы были установлены:
-1. 1C:Enterprise Development Tools версии 1.8.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.8.3.3)
-2. Eclipse Oxygen (4.7.2) for RCP and RAP Developers (http://www.eclipse.org/downloads/packages/eclipse-rcp-and-rap-developers/oxygen2)
-3. Java SE Development Kit 8u151  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. 1C:Enterprise Development Tools версии 1.9.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.9.0.1232)
+2. Eclipse Oxygen (4.7.3) for RCP and RAP Developers (http://www.eclipse.org/downloads/packages/release/oxygen/3/eclipse-rcp-and-rap-developers)
+3. Java SE Development Kit 8u181  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 # Запуск плагина из Eclipse
 Запускаем Eclipse на чистой рабочей области (workspace) 
@@ -23,7 +23,7 @@
 После импорта проекта необходимо настроить целевую платформу. Для этого при открытии файла target/default.target нужно ввести в появившемся окне логин и пароль от "https://partners.v8.1c.ru/". После дожидаемся установки всех компонент и устанавливаем данную целевую платформу, ПКМ на <b>target/default.target</b> -> Open with -> Target Editor -> Set as target platform.
 
 ## Запуск 
-ПКМ на проекте <b>com._1c.dt.example.plugin</b> -> Run as -> Eclipse application.
+ПКМ на проекте <b>com._1c.dt.example.plugin.ui</b> -> Run as -> Eclipse application.
 После чего запустится 1C:Enterprise Development Tools с разработанным плагином.
 Для проверки можно создать новую конфигурацию с документом и регистром накопления, далее в объектном модуле документа через контекстное меню вызвать "Создать движения регистров"
 
@@ -162,6 +162,36 @@
           <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
           <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
         </server>
+        <server>
+          <id>babel_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>dt_v8platform_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>xiliary_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>antlr_runtime_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>geoschema_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
+        <server>
+          <id>monitoring_repository</id>
+          <username>Ваше имя пользователя на сайте "https://partners.v8.1c.ru/"</username>
+          <password>Ваш зашифрованный пароль от сайта "https://partners.v8.1c.ru/"</password>
+        </server>
  ```
 5. Пример готового "settings.xml":
 ```    
@@ -285,6 +315,36 @@
           </server>
           <server>
             <id>lwt_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>babel_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>dt_v8platform_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>xiliary_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>antlr_runtime_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>geoschema_repository</id>
+            <username>username@1c.ru</username>
+            <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
+          </server>
+          <server>
+            <id>monitoring_repository</id>
             <username>username@1c.ru</username>
             <password>{qEXU1eFlPK0HdzfDm+noq/9i981iKCW3ITAitg7coBI=}"</password>
           </server>
