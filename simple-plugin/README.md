@@ -8,9 +8,9 @@
 Инструкция по разработке плагинов к 1C:Enterprise Development Tools расположена в подкаталоге  <b>plugin-development/documentation-html/index.html</b> каталога установки инструмента.
 
 # Для разработки и запуска плагина необходимо, чтобы были установлены:
-1. 1C:Enterprise Development Tools версии 1.10.0. (https://releases.1c.ru/version_files?nick=DevelopmentTools10&ver=1.10.0.1603)
-2. Eclipse Oxygen (4.7.3) for RCP and RAP Developers (http://www.eclipse.org/downloads/packages/release/oxygen/3/eclipse-rcp-and-rap-developers)
-3. Java SE Development Kit 8u181  (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. 1C:Enterprise Development Tools версии 2020.1. (https://releases.1c.ru/project/DevelopmentTools10)
+2. Eclipse 2019-06 for Eclipse Committers (https://www.eclipse.org/downloads/packages/release/2019-06/r/eclipse-ide-eclipse-committers)
+3. Liberica JDK version 11 (Full version)  (https://bell-sw.com/pages/java-11.0.6/)
 
 # Запуск плагина из Eclipse
 Запускаем Eclipse на чистой рабочей области (workspace) 
@@ -25,11 +25,11 @@
 ## Запуск 
 ПКМ на проекте <b>com._1c.dt.example.plugin.ui</b> -> Run as -> Eclipse application.
 После чего запустится 1C:Enterprise Development Tools с разработанным плагином.
-Для проверки можно создать новую конфигурацию с документом и регистром накопления, далее в объектном модуле документа через контекстное меню вызвать "Создать движения регистров"
+Для проверки можно создать новую конфигурацию с документом и регистром накопления, далее в объектном модуле документа через контекстное меню вызвать "Создать движения документов"
 
 # Сборка плагина через Maven (https://maven.apache.org/)
 ## Установка maven:
-1. Установить Maven последней версии 3.3.9 (https://maven.apache.org/download.cgi)
+1. Установить Maven последней версии 3.6.3 (https://maven.apache.org/download.cgi)
 2. Выполнить все инструкции по установке (https://maven.apache.org/install.html)
 3. Так как необходимые данные для разработки плагина доступны только пользователям портала "partners.v8.1c.ru", то необходимо указать информацию о пользователе. Зашифруем пароль от портала "partners.v8.1c.ru" (более подробно можно почитать по данной ссылке: https://maven.apache.org/guides/mini/guide-encryption.html):
     1. Установить master-password - выполнить в консоли командной строки вашей операционной системы: mvn --encrypt-master-password <password>

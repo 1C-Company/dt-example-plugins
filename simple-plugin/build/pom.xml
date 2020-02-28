@@ -10,14 +10,17 @@
   <packaging>pom</packaging>
 
   <prerequisites>
-    <maven>3.1.1</maven>
+    <maven>3.6.0</maven>
   </prerequisites>
 
   <properties>
     <name>1C:Enterprise Development Tools Plugin</name>
-    <tycho.version>1.0.0</tycho.version>
-    <tycho.extras.version>1.0.0</tycho.extras.version>
-    <xtend.maven.plugin.version>2.12.0</xtend.maven.plugin.version>
+    <tycho.version>1.5.0</tycho.version>
+    <tycho.extras.version>1.5.0</tycho.extras.version>
+    <xtend.maven.plugin.version>2.18.0</xtend.maven.plugin.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>

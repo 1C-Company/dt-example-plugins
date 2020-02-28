@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="1C:EDT Topaz Platform" sequenceNumber="1">
+<?pde version="3.8"?><target name="1C:EDT Sapphire Platform" sequenceNumber="1">
 <locations>
 <!-- EDT -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -15,7 +15,6 @@
 <unit id="com._1c.g5.properties.ui.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.bp.scheme.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.cli.feature.feature.group" version="0.0.0"/>
-<unit id="com._1c.g5.v8.dt.codeaffine.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.diagram.framework.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.erd.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.eventhandlers.feature.feature.group" version="0.0.0"/>
@@ -26,11 +25,13 @@
 <unit id="com._1c.g5.v8.dt.markermatcher.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.services.mobile.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_native.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.support_v8.3.8.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.support_v8.3.9.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.10.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.11.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.12.feature.feature.group" version="0.0.0"/>
-<unit id="com._1c.g5.v8.dt.platform.support_v8.3.8.feature.feature.group" version="0.0.0"/>
-<unit id="com._1c.g5.v8.dt.platform.support_v8.3.9.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.support_v8.3.13.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.support_v8.3.14.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.product.docs.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.product.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.profiling.feature.feature.group" version="0.0.0"/>
@@ -41,6 +42,7 @@
 <unit id="com._1c.g5.v8.dt.xtext.runtime.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.xtext.ui.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.wiring.feature.feature.group" version="0.0.0"/>
+<unit id="com.e1c.g5.v8.dt.codeaffine.feature.feature.group" version="0.0.0"/>
 <unit id="de.itemis.xtext.antlr.feature.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.babel.nls_eclipse_ru.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.babel.nls_technology.egit_ru.feature.group" version="0.0.0"/>
@@ -94,7 +96,7 @@
 <unit id="org.eclipse.xsd.edit.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.xsd.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.xtext.xbase.lib.feature.group" version="0.0.0"/>
-<repository id="dt_repository" location="https://edt.1c.ru/releases/topaz/1.10.0/"/>
+<repository id="dt_repository" location="https://edt.1c.ru/releases/sapphire/2020.2/"/>
 </location>
 </locations>
 </target>
