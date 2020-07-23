@@ -17,24 +17,42 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
+        java-package: jdk+fx
         server-id: dt_repository
         server-username: MAVEN_USERNAME
         server-password: MAVEN_CENTRAL_TOKEN
 
     - name: Cache maven repo
       uses: actions/cache@v1
-      if: github.event_name == 'push' || github.event_name == 'pull_request'
+      if: github.event_name == 'push'
       with:
         path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        key: ${{ runner.os }}-maven-base-${{ hashFiles('**/pom.xml') }}-${{ hashFiles('targets/base/base.target') }}
         restore-keys: |
-          ${{ runner.os }}-maven-
-
+          ${{ runner.os }}-maven-base-  
+  
     - name: Build with Maven
-      run: mvn clean verify -PSDK,find-bugs -Dtycho.localArtifacts=ignore -B -V
       env:
         MAVEN_USERNAME: ${{ secrets.P2_USER }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.P2_TOKEN }}
+      working-directory: ./simple-plugin
+      run: |
+        Xvfb :5 -screen 0 1280x1024x8 -fbdir /tmp &
+        export DISPLAY=:5
+        mvn clean verify -PSDK,find-bugs -Dtycho.localArtifacts=ignore -B -V
+
+    - name: Publish Test Report
+      uses: scacap/action-surefire-report@v1
+      if: always()
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+  
+    - name: Upload test logs on failure
+      uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: logs
+        path: simple-plugin/**/.log
 
     - name: Create Release
       id: create_release
@@ -53,6 +71,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
+        asset_path: ./simple-plugin/repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
         asset_name: repo.zip
         asset_content_type: application/zip  
