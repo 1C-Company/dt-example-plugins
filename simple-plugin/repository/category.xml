@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <feature url="features/com._1c.dt.example_2.0.100.qualifier.jar" id="com._1c.dt.example" version="2.0.100.qualifier">
-      <category name="com._1c.dt.example.plugin.category.public"/>
-   </feature>
-   <category-def name="com._1c.dt.example.plugin.category.public" label="1C: Enterprise Development Tools Plugin"/>
-</site>

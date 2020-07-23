@@ -6,7 +6,6 @@
 #Build targets
 bin/
 target/
-!/target/
 #Report directories
 /reports
 */reports
