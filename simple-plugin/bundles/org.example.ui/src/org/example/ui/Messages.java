@@ -11,7 +11,7 @@ import org.eclipse.osgi.util.NLS;
 final class Messages
     extends NLS
 {
-    private static final String BUNDLE_NAME = "com._1c.dt.example.plugin.ui.messages"; //$NON-NLS-1$
+    private static final String BUNDLE_NAME = "org.example.ui.messages"; //$NON-NLS-1$
 
     public static String DataProcessingHandler_Error_not_document_object_module;
     public static String DataProcessingHandler_Error_no_accumulation_registers;
