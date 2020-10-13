@@ -6,10 +6,10 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: org.example;singleton:=true
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
-Require-Bundle: com._1c.g5.v8.dt.bsl;bundle-version="[17.0.0,18.0.0)",
- com._1c.g5.v8.dt.bsl.model;bundle-version="[6.4.100,7.0.0)",
+Require-Bundle: com._1c.g5.v8.dt.bsl;bundle-version="[18.0.0,19.0.0)",
+ com._1c.g5.v8.dt.bsl.model;bundle-version="[7.0.0,8.0.0)",
  org.eclipse.emf.ecore;bundle-version="[2.18.0,3.0.0)",
- org.eclipse.xtext;bundle-version="[2.18.0,3.0.0)",
+ org.eclipse.xtext;bundle-version="[2.22.0,3.0.0)",
  com._1c.g5.v8.dt.mcore;bundle-version="[7.0.0,8.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: org.example
