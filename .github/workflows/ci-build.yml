@@ -32,7 +32,7 @@ jobs:
       env:
         MAVEN_USERNAME: ${{ secrets.P2_USER }}
         MAVEN_CENTRAL_TOKEN: ${{ secrets.P2_TOKEN }}
-      working-directory: ./simple-plugin
+      working-directory: ./
       run: |
         Xvfb :5 -screen 0 1280x1024x8 -fbdir /tmp &
         export DISPLAY=:5
@@ -49,4 +49,4 @@ jobs:
       if: failure()
       with:
         name: logs
-        path: simple-plugin/**/.log
+        path: ./**/.log
