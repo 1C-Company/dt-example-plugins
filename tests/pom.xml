@@ -90,6 +90,32 @@
           <resolver>p2</resolver>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report-aggregate</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>report-aggregate</goal>
+            </goals>
+          </execution>
+        </executions>
+	  </plugin>
     </plugins>
 
     <pluginManagement>
@@ -100,7 +126,7 @@
           <configuration>
             <useUIHarness>true</useUIHarness>
             <useUIThread>true</useUIThread>
-            <argLine>${ui.test.vmargs} ${tycho-surefire-plugin.vmargs} ${debug.vmargs}</argLine>
+            <argLine>${ui.test.vmargs} ${tycho-surefire-plugin.vmargs} ${debug.vmargs} ${tycho.testArgLine}</argLine>
             <work>${project.build.directory}/work</work>
             <testRuntime>p2Installed</testRuntime>
           </configuration>

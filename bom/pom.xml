@@ -43,6 +43,7 @@
     <eclipse.p2.latest>http://download.eclipse.org/releases/2020-06/</eclipse.p2.latest>
 
     <p2repo.archive.skip>false</p2repo.archive.skip>
+    <org.jacoco.version>0.8.6</org.jacoco.version>
   </properties>
 
   <build>
@@ -213,6 +214,16 @@
         <plugin>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>1.8</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${org.jacoco.version}</version>
+          <configuration>
+            <excludes>
+              <exclude>**/MdClassPackageImpl*</exclude>
+            </excludes>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>

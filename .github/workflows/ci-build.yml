@@ -44,6 +44,15 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Upload JaCoCo exec data
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: jacoco
+        path: |
+          ./**/target/jacoco.exec
+          ./**/target/site/jacoco*/
+    
     - name: Upload test logs on failure
       uses: actions/upload-artifact@v2
       if: failure()
