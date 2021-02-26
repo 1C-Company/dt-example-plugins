@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
-   Copyright (c) 2020 1C-Soft LLC.
+   Copyright (c) 2020,2021 1C-Soft LLC.
    This program and the accompanying materials are made available under
    the terms of the Eclipse Public License 2.0 which is available at
    https://www.eclipse.org/legal/epl-2.0/
@@ -8,7 +8,7 @@
    Contributors:
        1C-Soft LLC - initial API and implementation
 -->
-<?pde version="3.8"?><target name="1C:EDT Sapphire Platform" sequenceNumber="1">
+<?pde version="3.8"?><target name="1C:EDT Ruby Platform" sequenceNumber="1">
 <locations>
 <!-- EDT -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -44,6 +44,7 @@
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.16.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.17.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.platform.support_v8.3.18.feature.feature.group" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.platform.support_v8.3.19.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.product.docs.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.product.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.profiling.feature.feature.group" version="0.0.0"/>
@@ -112,7 +113,7 @@
 <unit id="org.eclipse.xtext.xbase.lib.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.test.performance" version="0.0.0"/>
 <unit id="org.apache.derby" version="0.0.0"/>
-<repository id="dt_repository" location="https://edt.1c.ru/releases/sapphire/2020.6/"/>
+<repository location="https://edt.1c.ru/downloads/releases/ruby/2021.1/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.license.feature.group" version="0.0.0"/>

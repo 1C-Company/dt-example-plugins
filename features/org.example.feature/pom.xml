@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   Copyright (c) 2020 1C-Soft LLC
+   Copyright (c) 2020,2021 1C-Soft LLC
    This program and the accompanying materials are made available under
    the terms of the Eclipse Public License 2.0 which is available at
    https://www.eclipse.org/legal/epl-2.0/
@@ -24,13 +24,13 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.eclipse.tycho.extras</groupId>
-        <artifactId>tycho-source-feature-plugin</artifactId>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-source-plugin</artifactId>
         <executions>
           <execution>
             <phase>package</phase>
             <goals>
-              <goal>source-feature</goal>
+              <goal>feature-source</goal>
             </goals>
           </execution>
         </executions>
