@@ -7,7 +7,7 @@ Bundle-SymbolicName: org.example.ui;singleton:=true
 Bundle-Activator: org.example.ui.Activator
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
-Require-Bundle: com.google.inject;bundle-version="[3.0.0,4.0.0)",
+Require-Bundle: com.google.inject;bundle-version="[5.0.1,6.0.0)",
  org.eclipse.ui;bundle-version="[3.106.1,4.0.0)",
  org.eclipse.xtext.ui;bundle-version="[2.22.0,3.0.0)",
  org.eclipse.ui.ide;bundle-version="[3.10.2,4.0.0)",
