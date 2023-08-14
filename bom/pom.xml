@@ -25,8 +25,8 @@
   </prerequisites>
 
   <properties>
-    <tycho.version>2.2.0</tycho.version>
-    <tycho.extras.version>2.2.0</tycho.extras.version>
+    <tycho.version>2.7.0</tycho.version>
+    <tycho.extras.version>2.7.0</tycho.extras.version>
     
     <spotbugs.maven.plugin.version>3.1.12.2</spotbugs.maven.plugin.version>
     <checkstyle.version>8.5</checkstyle.version>
@@ -40,7 +40,7 @@
     <maven.build.timestamp.format>'v'yyyyMMdd-HHmm</maven.build.timestamp.format>
     <qualifier>${maven.build.timestamp}</qualifier>
 
-    <eclipse.p2.latest>http://download.eclipse.org/releases/2020-06/</eclipse.p2.latest>
+    <eclipse.p2.latest>http://download.eclipse.org/releases/2022-03/</eclipse.p2.latest>
 
     <p2repo.archive.skip>false</p2repo.archive.skip>
     <org.jacoco.version>0.8.6</org.jacoco.version>
