@@ -74,3 +74,15 @@ jobs:
         asset_path: ./repositories/org.example.repository.sdk/target/org.example.repository.sdk.zip
         asset_name: repo.zip
         asset_content_type: application/zip  
+
+    - name: Upload repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: examples-repository-1.0.0
+        path: repositories/org.example.repository/target/repository/
+        
+    - name: Upload SDK repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: examples-sdk-repository-1.0.0
+        path: repositories/org.example.repository.sdk/target/repository/
