@@ -10,10 +10,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v1
+    - name: Set up Maven 3.9.6
+      uses: s4u/setup-maven-action@v1.12.0
       with:
-        java-version: 11
+        java-version: 17
         java-package: jdk+fx
         server-id: dt_repository
         server-username: MAVEN_USERNAME
@@ -45,7 +45,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload JaCoCo exec data
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: jacoco
@@ -54,7 +54,7 @@ jobs:
           ./**/target/site/jacoco*/
     
     - name: Upload test logs on failure
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       if: failure()
       with:
         name: logs
