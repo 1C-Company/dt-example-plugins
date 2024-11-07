@@ -21,21 +21,21 @@
   <name>BOM</name>
 
   <prerequisites>
-    <maven>3.6.0</maven>
+    <maven>3.9.4</maven>
   </prerequisites>
 
   <properties>
-    <tycho.version>2.7.0</tycho.version>
-    <tycho.extras.version>2.7.0</tycho.extras.version>
+    <tycho.version>4.0.5</tycho.version>
+    <tycho.extras.version>4.0.5</tycho.extras.version>
     
-    <spotbugs.maven.plugin.version>3.1.12.2</spotbugs.maven.plugin.version>
+    <spotbugs.maven.plugin.version>4.8.3.1</spotbugs.maven.plugin.version>
     <checkstyle.version>8.5</checkstyle.version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.release>17</maven.compiler.release>
 
     <maven.build.timestamp.format>'v'yyyyMMdd-HHmm</maven.build.timestamp.format>
     <qualifier>${maven.build.timestamp}</qualifier>
@@ -43,7 +43,7 @@
     <eclipse.p2.latest>http://download.eclipse.org/releases/2022-03/</eclipse.p2.latest>
 
     <p2repo.archive.skip>false</p2repo.archive.skip>
-    <org.jacoco.version>0.8.6</org.jacoco.version>
+    <org.jacoco.version>0.8.8</org.jacoco.version>
   </properties>
 
   <build>
@@ -55,7 +55,7 @@
           <version>${tycho.version}</version>
           <configuration>
             <resolver>p2</resolver>
-            <executionEnvironment>JavaSE-11</executionEnvironment>
+            <executionEnvironment>JavaSE-17</executionEnvironment>
             <includePackedArtifacts>false</includePackedArtifacts>
             <target>
               <artifact>
@@ -295,7 +295,7 @@
               <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs</artifactId>
-                <version>4.0.0-beta2</version>
+                <version>4.8.3</version>
               </dependency>
             </dependencies>
           </plugin>
