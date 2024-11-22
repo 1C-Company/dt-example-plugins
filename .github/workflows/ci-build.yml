@@ -43,6 +43,18 @@ jobs:
       if: always()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: examples-repository-1.0.0
+        path: repositories/org.example.repository/target/repository/
+        
+    - name: Upload SDK repo
+      uses: actions/upload-artifact@v2
+      with:
+        name: examples-sdk-repository-1.0.0
+        path: repositories/org.example.repository.sdk/target/repository/
 
     - name: Upload JaCoCo exec data
       uses: actions/upload-artifact@v4
@@ -52,7 +64,7 @@ jobs:
         path: |
           ./**/target/jacoco.exec
           ./**/target/site/jacoco*/
-    
+
     - name: Upload test logs on failure
       uses: actions/upload-artifact@v4
       if: failure()
