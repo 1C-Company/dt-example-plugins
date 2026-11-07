@@ -41,6 +41,7 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <repository id="dt_repository" location="https://edt.1c.ru/downloads/releases/ruby/2026.2/"/>
 <unit id="com._1c.g5.v8.dt.rcp" version="0.0.0"/>
+<unit id="com._1c.g5.v8.dt.product.application" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.feature.feature.group" version="0.0.0"/>
 <unit id="com._1c.g5.v8.dt.thirdparty.feature.group" version="0.0.0"/>
 </location>
@@ -57,7 +58,7 @@
 <unit id="org.apache.commons.commons-logging" version="0.0.0"/>
 <unit id="org.apache.xmlgraphics" version="0.0.0"/>
 <unit id="com.github.weisj.jsvg" version="0.0.0"/>
-<unit id="org.tukaani.xz" version="1.11.0"/>
+<unit id="org.tukaani.xz" version="0.0.0"/>
 <unit id="jakarta.activation-api" version="1.2.2"/>
 <unit id="jakarta.servlet-api" version="6.1.0"/>
 <unit id="jakarta.xml.bind-api" version="2.3.3"/>
@@ -74,9 +75,10 @@
 
 <!-- Eclipse -->
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.sdk.feature.group" version="0.0.0"/>
-<unit id="org.eclipse.platform.feature.group" version="0.0.0"/>
-<unit id="org.eclipse.pde.feature.group" version="0.0.0"/>
+<unit id="org.apache.commons.codec" version="0.0.0"/>
+<unit id="org.eclipse.jdt" version="0.0.0"/>
+<unit id="org.eclipse.jdt.core.compiler.batch" version="0.0.0"/>
+<unit id="org.eclipse.jdt.annotation" version="0.0.0"/>
 <unit id="org.eclipse.orbit.xml-apis-ext" version="0.0.0"/>
 <unit id="org.osgi.service.http.whiteboard" version="0.0.0"/>
 <unit id="org.eclipse.equinox.http.service.api" version="0.0.0"/>
@@ -87,7 +89,7 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.ecf.core.feature.feature.group" version="0.0.0"/>
 <unit id="org.eclipse.ecf.filetransfer.httpclientjava.feature.feature.group" version="0.0.0"/>
-<repository id="eclipse_repository" location="https://download.eclipse.org/rt/ecf/3.15.7/site.p2/"/>
+<repository id="artifactory" location="https://download.eclipse.org/rt/ecf/3.15.7/site.p2/"/>
 </location>
 
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
